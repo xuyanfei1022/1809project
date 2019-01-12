@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kgoodslist</title>
+    <link rel="stylesheet" href="css/goodslist.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <!-- 动态获取头部 -->
+        </div>
+        <div class="list_tit">
+            <a href="index.html">首页</a>
+            <i>/</i>商品列表
+        </div>
+        <div class="list_all">
+            <div class="list_row">
+                <div class="row_left">品牌</div>
+                <ul>
+                    <li><a class="all_product" href="javascript:;">全部</a></li>
+                    <li><a href="#" class="all_product skyworth">创维</a></li>
+                </ul>
+            </div>
+            <div class="list_row">
+                <div class="row_left">品牌</div>
+                <ul>
+                    <li><a class="all_product" href="javascript:;">全部</a></li>
+                    <li><a href="#" class="all_product skyworth">1-1999</a></li>
+                    <li><a href="#" class="all_product skyworth">2000-3999</a></li>
+                    <li><a href="#" class="all_product skyworth">4000-5999</a></li>
+                    <li><a href="#" class="all_product skyworth">6000-9999</a></li>
+                    <li><a href="#" class="all_product skyworth">1000-14999</a></li>
+                    <li><a href="#" class="all_product skyworth">15000-24999</a></li>
+                    <li><a href="#" class="all_product skyworth">25000以上</a></li>
+                </ul>
+            </div>
+            <div class="list_row">
+                <div class="row_left">品牌</div>
+                <ul>
+                    <li><a class="all_product" href="javascript:;">全部</a></li>
+                    <li><a href="#" class="all_product skyworth">24-32</a></li>
+                    <li><a href="#" class="all_product skyworth">40-50</a></li>
+                    <li><a href="#" class="all_product skyworth">55-60</a></li>
+                    <li><a href="#" class="all_product skyworth">65</a></li>
+                    <li><a href="#" class="all_product skyworth">65以上</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search_type">
+            <div class="list_row">
+                <div class="row_left" id="paixu"><a>综合排序</a></div>
+                <ul>
+                    <li><a class="all_product skyworth" href="javascript:;">销量</a></li>
+                    <li><a href="#" class="all_product skyworth">上架时间</a></li>
+                    <li><a href="#" class="all_product skyworth">仅看有货</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pro_display">
+            <!-- 动态创建列表 -->
+        </div>
+        <div id="footer">
+            <!-- 动态获取底部-->
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/goodslist.js"></script>
+<script>
+    $("#header").load("public_header.html")
+    $("#footer").load("public_footer.html")
+</script>
