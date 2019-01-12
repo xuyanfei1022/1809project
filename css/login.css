@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,table,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,input,select,textarea{
+	margin:0;
+	padding:0;	
+}
+body{
+    font-family: "微软雅黑",Arial;
+    /* background:skyblue; */
+}
+a{
+	text-decoration:none;
+}
+ul,li{
+	list-style:none;
+}
+img{
+	border:0;
+}
+/* logo头部开始 */
+.head_box{
+    width: 1263px;
+    height: 100px;
+    margin: 0 auto;
+    /* background: skyblue; */
+    box-shadow: 0 0 20px -4px rgba(0,0,0,.2);
+}
+.logo_left img{
+    float: left;
+    width: 266px;
+    height: 25px;
+    padding-top: 35px;
+    padding-left: 86px;
+}
+.logo_right{
+    float: right;
+    line-height: 100px;
+    padding-right: 86px;
+    font-size: 14px;
+}
+.logo_right a{
+    color: #e83733;
+}
+
+/* section部分开始  */
+.section{
+    /* width: 1263px; */
+    height: 550px;
+    width: 1090px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px -4px rgba(0,0,0,.2);
+}
+.left_sec{
+   width:690px;
+   height: 550px; 
+   /* padding-left: 90px; */
+   float: left;
+}
+.right_sec{
+    width: 332px;
+    height: 490px;
+    padding: 30px;
+    /* background: #aaa; */
+    float: left;
+}
+.login_tit{
+    font-size: 24px;
+    font-weight: 100;
+    padding: 20px 0 30px 0;
+}
+
+
+.error_inf{
+    width: 450px;
+    height: 20px;
+    padding-top: 2px;
+}
+.reg_con{
+    margin-bottom: 20px;
+}
+.input_con{
+    width: 330px;
+    height: 45px;
+    border:1px solid #ddd;
+    margin: 0 auto;
+}
+.shuru_checkma{
+    width: 145px;
+    height: 45px;
+    border: none;
+    outline: none;
+}
+.iconfont{
+    font-size: 24px;
+    color:#dadada;
+    padding-left:  10px;
+    vertical-align: middle;
+}
+.check{
+    width: 50px;
+    height: 30px;
+    margin-right: 5px;
+    padding-left: 20px;
+    /* border: none; */
+    outline: none;
+}
+.error_inf{
+    font-size: 12px;
+    color: #cccccc;
+    padding-left: 25px;
+    line-height: 20px;
+    color:red;
+    display: none;
+}
+.error_inf img{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.next_step{
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+    background: #2e8ae4;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    margin-top: 45px;
+    cursor:pointer;
+}
+.auto_login{
+    padding-top: 10px;
+    font-size: 12px;
+}
+label{
+    color: #999999;
+}
+#remember{
+    vertical-align: middle;
+}
+.forget{
+    float: right;
+}
+.forget a{
+    color: #333333;
+}

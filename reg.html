@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <script src="js/iconfont.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+
+<body>
+    <div class="head_box">
+        <div class="logo_left">
+            <a href="javascript:;">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="logo_right">
+            已有账号？<a href="login.html">请登录</a>
+        </div>
+    </div>
+    <div class="reg_container">
+        <div class="reg_box">
+            <div class="step_top">
+                <div class="line">
+                    <div class="go_line"></div>
+                </div>
+                <ul class="step_all">
+                    <li class="step_one">
+                        <span>1</span>
+                        <p>验证手机号</p>
+                    </li>
+                    <li class="step_two">
+                        <span>2</span>
+                        <p>填写账号信息</p>
+                    </li>
+                    <li class="step_three">
+                        <span>3</span>
+                        <p>注册成功</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 注册输入部分开始 -->
+            <div class="reg_all reg_oneStep">
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-yanzhengma"></i>
+                        <input class="shuru_checkma" type="text" placeholder="请输入验证码">
+                        <span class="checkMa">
+                            <input class="check" type="text" value="6918"><button class="new_checkma">换一个</button>
+                        </span>
+                    </div>
+                    <div class="error_inf" id="check_error">
+                        <img src="img/error.png" alt="">请输入正确验证码
+                    </div>
+                </div>
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-shouji"></i>
+                        <input class="shuru_checkma" id="username" type="text" placeholder="请输入手机号">
+
+                    </div>
+                    <div class="error_inf" id="phone_error">
+                        <img src="img/error.png" alt="">请输入正确手机号
+                    </div>
+                </div>
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-yanzhengma"></i>
+                        <input class="shuru_checkma" type="text" placeholder="请输入手机验证码">
+                        <span class="checkMa">
+                            <button>发送验证码</button>
+                        </span>
+                    </div>
+                    <div class="error_inf">
+                        <img src="img/error.png" alt="">请输入图形验证码
+                    </div>
+                </div>
+                <div class="input_con next_step" id="next_one">下一步</div>
+            </div>
+
+            <!-- 第二部验证开始 -->
+            <div class="reg_all reg_twoStep">
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-shouji"></i>
+                        <input class="shuru_checkma" id="phone_num" type="text" placeholder="请输入手机号">
+
+                    </div>
+                    <div class="error_inf">
+                        <img src="img/error.png" alt="">请输入正确的手机号
+                    </div>
+                </div>
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-yanzhengma"></i>
+                        <input class="shuru_checkma" type="password" id="mima" placeholder="请输入密码">
+                    </div>
+                    <div class="error_inf" id="mima_error">
+                        <img src="img/error.png" alt="">请输入正确密码
+                    </div>
+                </div>
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-yanzhengma"></i>
+                        <input class="shuru_checkma" id="sure_mima" type="password" placeholder="确认密码">
+                    </div>
+                    <div class="error_inf" id="sure_error">
+                        <img src="img/error.png" alt="">两次密码输入不一致
+                    </div>
+                </div>
+                <div class="input_con next_step" id="last_step">下一步</div>
+            </div>
+
+            <!-- 注册成功开始 -->
+            <div class="reg_all reg_threeStep">
+                <div class="reged">
+                    <img src="img/success.png" alt="">
+                    <p><a href="login.html">注册成功，去登录！</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script src="js/reg.js"></script>

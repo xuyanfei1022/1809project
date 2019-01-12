@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shoppingCart</title>
+    <link rel="stylesheet" href="css/shoppingCart.css">
+</head>
+
+<body>
+    <div class="header">
+        <!-- 动态添加头部 -->
+    </div>
+
+    <div class="cart_container">
+        <div class="list_container">
+            <div class="list_head">
+                <div class="input_conteiner">
+                    <input id="chkAll" type="checkbox">
+                </div>
+                <ul class="allInfo">
+                    <li class="goods_info">商品信息</li>
+                    <li class="perPrice">单价</li>
+                    <li class="count">数量</li>
+                    <li class="jin_e">金额</li>
+                    <li class="active">操作</li>
+                </ul>
+            </div>
+            <div id="new_list">
+                <!-- 动态创建列表 -->
+            </div>
+            <div class="list_foot">
+                <div class="input_conteiner _checkbox">
+                    <input id="fanxuan" type="checkbox">
+                </div>
+                <div class="select_go">
+                    <div class="choose">
+                        <div class="cancel">取消全部</div>
+                        <a class="keeping" href="goodslist.html">继续购物</a>
+                    </div>
+                    <div class="go_right">
+                        <div class="already_container">已选商品<span class="already">0</span>件</div>
+                        <div class="zong"> 共计: <span class="totalMoney"></span></div>
+                        <div><a class="jiesuan" href="##">结算</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- 动态添加底部 -->
+    </div>
+</body>
+
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/cookieTools.js"></script>
+<script src="js/checkall.js"></script>
+<script src="js/shoppingCart.js"></script>

@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,table,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,input,select,textarea{
+	margin:0;
+    padding:0;	
+    color: #333333;
+    font-size: 12px;
+}
+body{
+    font-family: "微软雅黑",Arial;
+    background: #f4f4f4;
+    /* background:skyblue; */
+}
+a{
+	text-decoration:none;
+}
+ul,li{
+	list-style:none;
+}
+img{
+	border:0;
+}
+
+//商品列表开始
+.container{
+    width: 100%;
+}
+
+.list_tit{
+    width: 1210px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    z-index: 3;
+    a{
+        color: #333333;
+    }
+    i{
+        padding: 0 5px;
+    }
+}
+.list_all{
+    background: white;
+    width: 100%;
+    z-index: 3;
+}
+.list_row{
+    width: 1210px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    .row_left{
+        width: 100px;
+        color: #999999;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    ul{
+        border-bottom: 1px solid #f0f0f0;
+        float: left;
+        width: 1080px;
+        li{
+            float: left;
+            width: 108px;
+        }
+    }
+}
+.all_product{
+    border:1px solid #2e8ae4;
+    color: #2e8ae4;
+    padding: 5px 7px;
+}
+.skyworth{
+    border:none;
+    color: #333333;
+}
+.row_left{
+    float: left;
+}
+.search_type{
+    background: white;
+    margin: 10px auto;
+    div{
+        height: 40px;
+        line-height: 40px;
+        border:0;
+    }
+}
+#paixu a{
+    padding: 7px;
+    border:1px solid #2e8ae4;
+}
+
+// 商品展示开始
+.pro_display{
+    width: 1210px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 10px;
+} 
+.prod_container{
+    float: left;
+    width: 271px;
+    padding-left: 21px;
+    padding-bottom: 20px;
+    background: white;
+    margin:15px 14px 0 0;
+}
+.prod_container:nth-child(4n){
+    margin-right: 0;
+}
+.producst_box{
+    width: 292px;
+    // text-align: center;
+}
+.pprice{
+    color:#e83734;
+    font-size: 18px;
+    padding: 15px 0;
+}
+.prod_info{
+    p{
+        color: #999;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 3px;
+    }
+}
+.prod_cart{
+    position: relative;
+    .rgb_company{
+        display: inline-block;
+        padding:10px 0 5px 0;
+    }
+    .save_cart{
+        color: #2e8ae4;
+    }
+    .save_cart img{
+        width: 16px;
+        height: 14px;
+        vertical-align: middle;
+    }
+    .sell{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+.pro_nav{
+    overflow: hidden;
+}
+.pro_nav:hover{
+    overflow: visible;
+}

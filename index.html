@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SKYWORTH</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/sliderjQuery.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header头部欢迎开始 -->
+        <div class="header_center">
+            <div class="header_left">欢迎您，来到创维官方商城</div>
+            <div class="header_right">
+                <ul class="header_r_nav">
+                    <li>
+                        <a id="mob" href="javascript:;">手机端
+                            <img class="m_erweima" src="img/little.png">
+                            <p class="m_p">请用微信扫一扫</p>
+                        </a>
+                    </li>
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="reg.html">注册</a></li>
+                    <li><a href="javascript:;">我的订单</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- logo部分开始 -->
+        <div class="logo_container">
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <div class="search_container">
+                <div class="search">
+                    <input id="sousuo" type="text" placeholder="输入条件">
+                    <div class="sousuo_btn_con">
+                        <button class="sousuo_btn">
+                            <img src="img/search.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="search_nav">
+                    <a href="javascript:;">OLED</a>
+                    <a href="javascript:;">超薄</a>
+                    <a href="javascript:;">4K超清</a>
+                    <a href="javascript:;">全面屏</a>
+                    <a href="javascript:;">防蓝光护眼</a>
+                    <a href="javascript:;">大屏</a>
+                    <a href="javascript:;">智能网络</a>
+                </div>
+            </div>
+            <div class="mycart">
+                <img src="img/cart.png" alt="">
+                <a class="shoppingCart" href="shoppingCart.html">我的购物车</a>
+                <span class="goods_count">0</span>
+            </div>
+        </div>
+    </div>
+    <!-- 商品分类导航开始 -->
+    <div class="container">
+        <div class="pro_nav">
+            <a class="menu" href="javascript:;">
+                <img src="img/menu.png" alt="">
+                商品分类
+                <ul class="col_nav">
+                    <li>
+                        <a class="first_menu" href="goodslist.html">电视
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">OLED</a></li>
+                                <li class="second_menu"><a href="#">OLED</a></li>
+                                <li class="second_menu"><a href="#">OLED</a></li>
+                                <li class="second_menu"><a href="#">OLED</a></li>
+                                <li class="second_menu"><a href="#">OLED</a></li>
+                                <li class="second_menu"><a href="#">OLED</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">盒子/
+                            投影仪<img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">企鹅极光</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">冰箱
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">冷风</a></li>
+                                <li class="second_menu"><a href="#">直风</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">洗衣机
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">滚筒</a></li>
+                                <li class="second_menu"><a href="#">滚筒</a></li>
+                                <li class="second_menu"><a href="#">滚筒</a></li>
+                                <li class="second_menu"><a href="#">滚筒</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">净水器
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">前置过滤</a></li>
+                                <li class="second_menu"><a href="#">前置过滤</a></li>
+                                <li class="second_menu"><a href="#">前置过滤</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">空调
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">立柜式</a></li>
+                                <li class="second_menu"><a href="#">立柜式</a></li>
+                                <li class="second_menu"><a href="#">立柜式</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">音响
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">没</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">显示器
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">没</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">智能锁
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">没</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="first_menu" href="javascript:;">商务机
+                            <img src="img/right.png" />
+                            <ul class="menu_container">
+                                <li class="second_menu"><a href="#">E388G系列</a></li>
+                                <li class="second_menu"><a href="#">E388G系列</a></li>
+                                <li class="second_menu"><a href="#">E388G系列</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </a>
+            <ul class="row_nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="javascript:;">服务</a></li>
+                <li><a href="javascript:;">创维集团</a></li>
+                <li><a href="javascript:;">爱内购</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider_box">
+        <!-- <div class="slider"></div> -->
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>热销推荐</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container">
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>电视</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>盒子/投影仪</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>冰箱</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>洗衣机</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>净水器</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>空调</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>音响</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>显示器</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="porduct_start">
+        <div class="pro_tit_box">
+            <h2>智能锁</h2>
+            <a class="more_pro" href="javascript:;">查看更多&gt;</a>
+        </div>
+        <div class="row_container ">
+            <div class="pro_container hot_pro">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=478 height=228 src="img/201811020357204033.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price r_price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+            <div class="pro_container">
+                <div class="product_box">
+                    <a href="javascript:;">
+                        <img width=190 height=190 src="img/201811300217167656.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pro_info">
+                    <h5>55H6(送挂架、影视年卡)</h5>
+                    <p>全面屏|超解像技术|防蓝光|2+32G</p>
+                    <div class="price">￥3288.00</div>
+                </div>
+                <div class="pro_hover">
+                    <span>￥3288.00</span>
+                    <a class="add_cart" href="#">加入购物车</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 返回顶部 -->
+    <div class="backtop">
+        <ul>
+            <li>
+                <a href="javascript:;">
+                    <span id="qian"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span id="hou"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span id="back"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- footer部分开始 -->
+    <div class="footer">
+        <div class="kefu_box">
+            <ul>
+                <li class="phone">400-866-5555</li>
+                <li class="time">周一至周日 7:00 - 23:00</li>
+                <li>
+                    <a class="kefu" href="javascript:;">
+                        <img src="img/kefu.png" alt="">在线客服
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="partner">友情链接：<a href="javascript:;">酷开TV</a></p>
+            <p> ICP备案证号：粤ICP备09157852号</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    $(function () {
+        //引入轮播图
+        let pinmu = document.body.clientWidth || document.documentElement.clientWidth;
+        new Slider({
+            $box: $(".slider_box"),
+            width: pinmu,
+            height: 510,
+            imgs: ["img/2018112226PC投影仪.jpg",
+                "img/2018121131QQ图片20181225112727.jpg",
+                "img/2018121738Live2PC.jpg",
+                "img/20181217234.jpg"
+            ],
+            btnColor: "white",
+            btnHighColor: 'red',
+            btnSize: 20,
+            isCircle: true,
+            timeSpace: 3000
+        });
+    })
+</script>

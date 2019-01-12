@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,table,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,input,select,textarea{
+	margin:0;
+    padding:0;	
+    color: #333333;
+    font-size: 14px;
+}
+body{
+    font-family: "微软雅黑",Arial;
+    background: #999999;
+}
+a{
+	text-decoration:none;
+}
+ul,li{
+	list-style:none;
+}
+img{
+	border:0;
+}
+//侧边导的效果
+.pro_nav{
+    overflow: hidden;
+}
+.pro_nav:hover{
+    overflow: visible;
+}
+
+// 商品详细信息开始
+.list_tit{
+    width: 1210px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    z-index: 3;
+    a{
+        color: #333333;
+    }
+    i{
+        padding: 0 5px;
+    }
+}
+.img_container{
+    width: 1150px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:60px 30px;
+    background: white;
+}
+.left_img{
+    float: left;
+    width: 50   0px;
+    height: 572px;
+    // background: #ddd;
+    .imgbox{
+        width: 500px;
+        height: 500px;
+        background:#aaa;
+    }
+    .small_img{
+        width: 410px;
+        height: 62px;
+        padding: 0 44px;
+        margin-top: 10px;
+        p{
+            float: left;
+            height: 62px;
+            background: #dddddd;
+           img{
+               padding-top: 15px;
+           }
+        }
+        .youjian{
+            float: right;
+        }
+        ul{
+            float: left;
+            padding-left: 30px;
+        }
+        li{
+            float: left;
+            width: 60px;
+            height: 60px;
+            // background:pink;
+            margin-left: 7px;
+            border: 1px solid #ddd;
+            &:hover{
+                border: 1px solid #f60;
+            }
+        }
+    }
+}
+.right_text{
+    float: left;
+    width: 592px;
+    // height: 381px;
+    // background: #eee;
+    margin-left: 52px;
+    color:#666;
+    h2{
+        font-size: 24px;
+        font-weight: 100;
+    }
+}
+.g_desc{
+    padding-top: 8px;
+    color: #b0b0b0;
+}
+.yunshu, .price{
+    padding:10px 0;
+    overflow: hidden;
+    margin-top: 20px;
+    span{
+        float: left;
+        width: 65px;
+    }
+    p{
+        float: left;
+        width: 525px;
+    }
+}
+.sell_price{
+    color: #e83632;
+    font-size: 18px;
+}
+.version{
+    margin-top: 22px;
+    overflow: hidden;
+    span{
+        float: left;
+        width: 65px;
+    }
+    ul{
+        float: left;
+    }
+    .one_ver{
+        border:1px solid #2f89e4;
+    }
+    li{
+        float:left;
+        padding: 5px 10px;
+        border:1px solid #e5e5e5;
+        margin-right: 8px;
+        &:hover{
+        border:1px solid #2f89e4;
+        }
+
+        a{
+            color:#333333;
+        }
+    }
+}
+.baoyou{
+    a{
+        color: red;
+    }
+}
+.shuliang{
+    margin-top:20px;
+    width: 525px;
+    height: 30px;
+    line-height: 30px;
+    span{
+        float: left;
+        width: 29px;
+        height: 29px;
+        line-height: 29px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-size: 20px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.count_tit{
+    float: left;
+    width: 65px;
+    border: none;
+}
+#count{
+    float: left;
+    width: 40px;
+    height: 27px;
+    text-align: center;
+}
+
+.shopping{
+    margin-top: 20px;
+    a{
+        float: left;
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #2e8ae4;
+        color: white;
+        margin-right: 20px;
+    }
+    #gobuy{
+        background: #e83632;
+    }
+}

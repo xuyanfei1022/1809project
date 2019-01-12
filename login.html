@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <script src="js/iconfont.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/cookieTools.js"></script>
+</head>
+
+<body>
+    <div class="head_box">
+        <div class="logo_left">
+            <a href="javascript:;">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="logo_right">
+            没有账号？<a href="reg.html">请注册</a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="left_sec">
+            <img src="img/login_ad.png" alt="">
+        </div>
+        <div class="right_sec">
+            <h2 class="login_tit">会员登录</h2>
+            <div class="reg_all reg_oneStep">
+                
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-shouji"></i>
+                        <input class="shuru_checkma" id="username" type="text" placeholder="请输入手机号">
+
+                    </div>
+                    <div class="error_inf" id="phone_error">
+                        <img src="img/error.png" alt="">请输入正确手机号
+                    </div>
+                </div>
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-yanzhengma"></i>
+                        <input class="shuru_checkma" id="mima" type="password" placeholder="请输入密码">
+                    </div>
+                    <div class="error_inf">
+                        <img src="img/error.png" alt="">请输入图形验证码
+                    </div>
+                </div>
+                <div class="reg_con">
+                    <div class="input_con">
+                        <i class="iconfont icon-yanzhengma"></i>
+                        <input class="shuru_checkma" id="in_check" type="text" placeholder="请输入验证码">
+                        <span class="checkMa">
+                            <input class="check" type="text" value="6918"><button class="new_checkma">换一个</button>
+                        </span>
+                    </div>
+                    <div class="error_inf" id="check_error">
+                        <img src="img/error.png" alt="">请输入正确验证码
+                    </div>
+                </div>
+                <div class="input_con next_step" id="next_one">下一步</div>
+                <div class="auto_login">
+                    <label for=""><input id="remember" type="checkbox">30天内记住我的登录信息</label>
+                    <div class="forget">
+                        <a href="#">忘记密码？</a>/
+                        <a href="reg.html">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/login.js"></script>
